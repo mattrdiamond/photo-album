@@ -1,0 +1,47 @@
+.user {
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid var(--primary-10);
+  }
+
+  &:hover {
+    background-color: var(--primary-05);
+  }
+
+  &.active {
+    background-color: var(--accent-bkd);
+    box-shadow: inset 5px 0 0 var(--accent-reg);
+  }
+
+  span {
+    display: block;
+
+    &:last-of-type {
+      margin-top: 0.125rem;
+    }
+  }
+
+  .user-wrapper {
+    display: flex;
+  }
+
+  .avatar {
+    width: 65px;
+    height: 65px;
+    margin-right: 1rem;
+    border-radius: 50%;
+  }
+
+  .user-details {
+    color: var(--primary-70);
+  }
+
+  .user-name {
+    margin-bottom: 0.375rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,10 @@
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--accent-reg);
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  position: relative;
+  z-index: 2;
+}

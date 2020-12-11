@@ -1,0 +1,21 @@
+.album {
+  padding: 1rem;
+  background: #fff;
+
+  span {
+    display: block;
+  }
+
+  .album-number {
+    font-size: 0.875rem;
+    color: var(--accent-reg);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .album-title {
+    text-transform: capitalize;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+}

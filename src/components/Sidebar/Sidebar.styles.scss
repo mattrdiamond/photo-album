@@ -1,0 +1,29 @@
+.sidebar {
+  background: #fff;
+  width: 340px;
+  height: 100%;
+  font-size: 0.875rem;
+  overflow: hidden;
+  transition: margin-left 0.3s;
+
+  &.hidden {
+    margin-left: calc(0px - var(--sidebar-width));
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    position: fixed;
+    top: var(--nav-height);
+    height: calc(100% - var(--nav-height));
+    z-index: 1;
+  }
+}
